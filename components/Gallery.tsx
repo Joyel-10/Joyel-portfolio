@@ -128,6 +128,7 @@ function ImgCard({ img, onClick }: { img: any; onClick: () => void }) {
       <div className={`w-full ${h} relative overflow-hidden`}>
         <img
           src={`/gallery/${img.id}.jpg`}
+          
           alt={img.title}
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />

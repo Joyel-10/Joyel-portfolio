@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { ChevronDown, Play, Code2, Video, Sparkles } from 'lucide-react'
 
-const ROLES = ['AI Video Prompt Engineer','Web Developer','Creative Technologist','Generative Media Artist','AI Scene Director']
+const ROLES = ['AI Video Prompt Engineer','Fullstack Developer','Creative Technologist']
 
 export default function Hero() {
   const [ri, setRi] = useState(0)

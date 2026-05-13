@@ -10,7 +10,51 @@ import {
 
 const DEVS = [
   {
-    id: 1,
+  id: 1,
+  title: "TaskFlow AI — Project Management SaaS",
+  type: "SaaS Web Application",
+  img: "/projects/taskflow.png",
+  stack: ["Next.js 14", "Node.js", "Express", "MongoDB", "Groq Llama 3.3 70B", "JWT", "Zustand", "Recharts", "Tailwind CSS"],
+  desc: "Production-ready AI-powered project management SaaS with role-based access, real-time AI assistant, and analytics dashboard.",
+  features: [
+    "JWT auth with role-based access (Admin/Member) & bcrypt password hashing",
+    "25+ RESTful API endpoints with express-validator input validation",
+    "AI assistant powered by Groq Llama 3.3 70B with real-time MongoDB context injection",
+    "AI Task Generator — creates structured task lists from a single natural language prompt",
+    "Drag-and-drop Kanban board with optimistic UI updates",
+    "Real-time analytics dashboard with 7-day completion trend via Recharts",
+    "Global auth state with Zustand — persistent across page refreshes",
+  ],
+  live: "https://task-flow-frontend-neon.vercel.app/",
+  git: "https://github.com/Joyel-10",
+  status: "Live on Vercel",
+  featured: true,
+},
+
+{
+  id: 2,
+  title: "AI Content Studio — Blog Generator SaaS",
+  type: "SaaS Web Application",
+  img: "/projects/aicontent.png",
+  stack: ["Next.js 14", "TypeScript", "Node.js", "Express", "MongoDB", "Anthropic Claude API", "JWT", "jsPDF", "Framer Motion", "Tailwind CSS"],
+  desc: "Full-stack AI SaaS that generates professional blog posts using Anthropic Claude API with multiple tones, lengths, and a Cinematic writing mode.",
+  features: [
+    "Blog generation via Anthropic Claude API with 10 writing tones & 3 content lengths",
+    "Cinematic Mode for story-driven, narrative-style writing",
+    "End-to-end JWT authentication with Axios interceptors & auto token injection",
+    "Server-side prompt engineering for consistent, high-quality AI output",
+    "Client-side PDF export using jsPDF — no backend involvement",
+    "Per-user blog history with full CRUD & paginated retrieval via MongoDB Atlas",
+    "Glassmorphism UI with Framer Motion animations & full mobile responsiveness",
+  ],
+  live: "https://ai-content-frontend-iota.vercel.app/",
+  git: "https://github.com/Joyel-10",
+  status: "Live on Vercel",
+  featured: true,
+},
+
+  {
+    id: 3,
     title: "Inventory Management System",
     type: "Web Application",
     img: "/projects/in.png",
@@ -30,10 +74,30 @@ const DEVS = [
   },
 
   {
-    id: 2,
+    id: 4,
+    title: "Inventory Management System",
+    type: "Web Application",
+    img: "/projects/in.png",
+    stack: ["Angular", "TypeScript", "REST API", "Bootstrap"],
+    desc: "Inventory tracking system with real-time stock management...",
+    features: [
+      "Product CRUD with category management",
+      "Real-time stock level alerts & notifications",
+      "Supplier & purchase order tracking",
+      "Sales reports with analytics charts",
+      "User authentication & role management",
+    ],
+    live: "https://inventory-management-beta-weld.vercel.app/",
+    git: "https://github.com/Joyel-10/Inventory-Management",
+    status: "Live on Vercel",
+    featured: false,
+  },
+
+  {
+    id: 5,
     title: "Waste Management System",
     type: "Full Stack App",
- 
+
     img: "/projects/wa.png",
     stack: ["MongoDB", "Express", "React", "Node.js"],
     desc: "MERN stack app for managing waste collection routes...",
@@ -51,10 +115,10 @@ const DEVS = [
   },
 
   {
-    id: 3,
+    id: 6,
     title: "Article Creation Application",
     type: "Content Platform",
-    
+
     img: "/projects/ar.png",
     stack: ["React.js", "Tailwind CSS", "REST API", "Vercel"],
     desc: "Article writing platform with rich text editor...",
@@ -72,7 +136,7 @@ const DEVS = [
   },
 
   {
-    id: 4,
+    id: 7,
     title: "SKYLINE: Street Chronicles",
     type: "Browser Racing Game",
 
@@ -99,7 +163,6 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
     <div
       className={`card rounded-3xl overflow-hidden group`}
       style={{
-      
         animation: p.featured ? "borderGlow 4s linear infinite" : undefined,
       }}
     >
@@ -127,7 +190,7 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
             fontFamily: "Orbitron,monospace",
             fontWeight: 900,
             fontSize: "6rem",
-          
+
             lineHeight: 1,
             userSelect: "none",
           }}
@@ -137,12 +200,7 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
 
         <div className="relative z-10 w-full">
           <div className="flex flex-wrap items-center gap-2">
-            <span
-              className="pill"
-              style={{
-              
-              }}
-            >
+            <span className="pill" style={{}}>
               {p.type}
             </span>
 
@@ -172,13 +230,7 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
         {/* Stack */}
         <div className="flex flex-wrap gap-1.5 mb-4">
           {p.stack.map((s) => (
-            <span
-              key={s}
-              className="pill"
-              style={{
-             
-              }}
-            >
+            <span key={s} className="pill" style={{}}>
               {s}
             </span>
           ))}
@@ -191,9 +243,7 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all hover:scale-105"
-            style={{
-            
-            }}
+            style={{}}
           >
             <Globe size={12} /> Live Demo
           </a>
@@ -216,7 +266,7 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
         <button
           onClick={() => setExp(!exp)}
           className="flex items-center gap-2 text-xs font-bold tracking-wide transition-all hover:gap-3"
-          style={{ fontFamily: "JetBrains Mono,monospace",  }}
+          style={{ fontFamily: "JetBrains Mono,monospace" }}
         >
           <ExternalLink size={11} />
           {exp ? "Hide Features" : "Key Features"}
@@ -232,9 +282,7 @@ function DevCard({ p }: { p: (typeof DEVS)[0] }) {
               >
                 <div
                   className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5"
-                  style={{
-                  
-                  }}
+                  style={{}}
                 />
                 {f}
               </li>
