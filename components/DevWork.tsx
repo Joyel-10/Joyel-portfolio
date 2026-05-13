@@ -13,7 +13,7 @@ const DEVS = [
   id: 1,
   title: "TaskFlow AI — Project Management SaaS",
   type: "SaaS Web Application",
-  img: "/projects/taskflow.png",
+  img: "/projects/Task.png",
   stack: ["Next.js 14", "Node.js", "Express", "MongoDB", "Groq Llama 3.3 70B", "JWT", "Zustand", "Recharts", "Tailwind CSS"],
   desc: "Production-ready AI-powered project management SaaS with role-based access, real-time AI assistant, and analytics dashboard.",
   features: [
@@ -35,7 +35,7 @@ const DEVS = [
   id: 2,
   title: "AI Content Studio — Blog Generator SaaS",
   type: "SaaS Web Application",
-  img: "/projects/aicontent.png",
+  img: "/projects/Content.png",
   stack: ["Next.js 14", "TypeScript", "Node.js", "Express", "MongoDB", "Anthropic Claude API", "JWT", "jsPDF", "Framer Motion", "Tailwind CSS"],
   desc: "Full-stack AI SaaS that generates professional blog posts using Anthropic Claude API with multiple tones, lengths, and a Cinematic writing mode.",
   features: [
@@ -73,28 +73,10 @@ const DEVS = [
     featured: false,
   },
 
-  {
-    id: 4,
-    title: "Inventory Management System",
-    type: "Web Application",
-    img: "/projects/in.png",
-    stack: ["Angular", "TypeScript", "REST API", "Bootstrap"],
-    desc: "Inventory tracking system with real-time stock management...",
-    features: [
-      "Product CRUD with category management",
-      "Real-time stock level alerts & notifications",
-      "Supplier & purchase order tracking",
-      "Sales reports with analytics charts",
-      "User authentication & role management",
-    ],
-    live: "https://inventory-management-beta-weld.vercel.app/",
-    git: "https://github.com/Joyel-10/Inventory-Management",
-    status: "Live on Vercel",
-    featured: false,
-  },
+
 
   {
-    id: 5,
+    id: 4,
     title: "Waste Management System",
     type: "Full Stack App",
 
@@ -115,7 +97,7 @@ const DEVS = [
   },
 
   {
-    id: 6,
+    id: 5,
     title: "Article Creation Application",
     type: "Content Platform",
 
@@ -136,7 +118,7 @@ const DEVS = [
   },
 
   {
-    id: 7,
+    id: 6,
     title: "SKYLINE: Street Chronicles",
     type: "Browser Racing Game",
 
